@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AV8 Integrated Systems | Audio • Video • Technology • Solutions</title>
-    <meta name="description" content="Professional audio-visual integration for residential, commercial, and church spaces in Central Texas.">
+    <title>AV8 Integrated Systems | Clear Sound. Clear Message.</title>
+    <meta name="description" content="Professional audio-visual integration for churches, homes, and businesses in Central Texas. Clear Sound. Clear Message.">
     <style>
         body {
             margin: 0;
@@ -30,43 +30,62 @@
         .tagline {
             color: #00e5ff;
             font-size: 1.1rem;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin-top: 0.5rem;
         }
         .hero {
             text-align: center;
-            padding: 3rem 0;
+            padding: 4rem 0 3rem;
         }
-        h1 {
-            font-size: 2.8rem;
-            margin: 0 0 1rem;
+        .hero h1 {
+            font-size: 3.2rem;
+            line-height: 1.1;
+            margin: 0 0 1.5rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #ccc;
+            max-width: 620px;
+            margin: 0 auto 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #00e5ff;
+            color: #000;
+            padding: 14px 36px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
         }
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
             margin: 3rem 0;
         }
         .service-card {
             background: #111;
-            padding: 1.8rem;
+            padding: 2rem;
             border-radius: 8px;
             border: 1px solid #222;
         }
         .service-card h3 {
             color: #00e5ff;
             margin-top: 0;
+            margin-bottom: 0.75rem;
         }
         .contact {
             background: #111;
-            padding: 3rem 0;
+            padding: 4rem 0;
             text-align: center;
         }
         .contact h2 {
             color: #00e5ff;
+            margin-bottom: 1rem;
         }
         form {
-            max-width: 500px;
+            max-width: 520px;
             margin: 2rem auto 0;
             display: grid;
             gap: 1rem;
@@ -103,69 +122,73 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header / Logo -->
+
+        <!-- Header -->
         <header>
             <img src="logo.png" alt="AV8 Integrated Systems" class="logo">
             <p class="tagline">AUDIO • VIDEO • TECHNOLOGY • SOLUTIONS</p>
         </header>
 
-        <!-- Hero -->
+        <!-- Hero with New Motto -->
         <section class="hero">
-            <h1>Professional AV Integration<br>for Central Texas</h1>
-            <p style="max-width: 600px; margin: 0 auto; font-size: 1.2rem; color: #ccc;">
-                Residential • Commercial • Church<br>
-                Clear sound. Reliable systems. Expert design and installation.
+            <h1>Clear Sound.<br>Clear Message.</h1>
+            <p>
+                Professional audio-visual integration for churches, homes, and businesses across Central Texas.
             </p>
+            <a href="#contact" class="btn">Get in Touch</a>
         </section>
 
         <!-- Services -->
-        <h2 style="text-align:center; color:#00e5ff;">Services</h2>
+        <h2 style="text-align:center; color:#00e5ff; margin-bottom: 2rem;">What We Do</h2>
+        
         <div class="services">
             <div class="service-card">
+                <h3>Church Sound Systems</h3>
+                <p>Clear, powerful audio solutions designed specifically for worship spaces of any size.</p>
+            </div>
+            <div class="service-card">
                 <h3>Residential &amp; Home Theater</h3>
-                <p>Custom audio, video, home theater, and smart home integration tailored to your space.</p>
+                <p>Custom audio, video, and smart home integration tailored to your lifestyle.</p>
             </div>
             <div class="service-card">
-                <h3>Commercial &amp; Conference Rooms</h3>
-                <p>Professional AV systems for offices, conference rooms, and commercial spaces.</p>
-            </div>
-            <div class="service-card">
-                <h3>Church &amp; Worship Spaces</h3>
-                <p>Clear, powerful sound systems and video solutions designed for worship environments.</p>
+                <h3>Commercial AV</h3>
+                <p>Professional systems for offices, conference rooms, and commercial spaces.</p>
             </div>
             <div class="service-card">
                 <h3>Consultation &amp; Design</h3>
-                <p>Expert planning, system design, and recommendations for any AV project.</p>
+                <p>Expert planning and system design for new builds or upgrades.</p>
             </div>
             <div class="service-card">
-                <h3>Networking &amp; Smart Integration</h3>
-                <p>Wi-Fi, networking, TV mounting, and full smart home / automation solutions.</p>
+                <h3>Installation &amp; Tuning</h3>
+                <p>Professional installation and precise system tuning for the best results.</p>
             </div>
             <div class="service-card">
-                <h3>Installation &amp; Support</h3>
-                <p>Professional installation and ongoing support across Central Texas.</p>
+                <h3>Networking &amp; Integration</h3>
+                <p>Wi-Fi, networking, TV mounting, and full smart home solutions.</p>
             </div>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Let’s Work Together</h2>
-            <p style="max-width: 500px; margin: 0 auto 1.5rem;">Ready to improve your sound, video, or AV experience?</p>
+            <h2>Let’s Talk About Your Project</h2>
+            <p style="max-width: 500px; margin: 0 auto 2rem; color: #ccc;">
+                Ready for better sound and reliable AV?
+            </p>
 
             <form name="contact" method="POST" data-netlify="true">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
                 <input type="tel" name="phone" placeholder="Phone Number">
-                <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                <textarea name="message" rows="5" placeholder="Tell us about your project or space..." required></textarea>
                 <button type="submit">Send Message</button>
             </form>
 
-            <p style="margin-top: 2rem;">
+            <p style="margin-top: 2.5rem; line-height: 1.8;">
                 <strong>Nathan Nance</strong><br>
                 <a href="tel:2543001127">254-300-1127</a><br>
-                <a href="mailto:info@av8.to">info@av8.to</a><br>
+                <a href="mailto:nathan@av8.to">nathan@av8.to</a><br>
                 <a href="https://www.av8.to">www.av8.to</a>
             </p>
         </div>
@@ -178,12 +201,12 @@
     </footer>
 
     <script>
-        // Optional: Simple form success message
+        // Simple form success message
         const form = document.querySelector('form');
         if (form) {
-            form.addEventListener('submit', () => {
-                setTimeout(() => {
-                    alert("Thank you! We'll get back to you shortly.");
+            form.addEventListener('submit', function() {
+                setTimeout(function() {
+                    alert("Thank you! We'll get back to you soon.");
                 }, 800);
             });
         }
